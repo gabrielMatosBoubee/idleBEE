@@ -1,0 +1,35 @@
+.header {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    max-height: 20vh;
+}
+
+.icon {
+    z-index: 2;
+    width: 8vh;
+}
+
+.item {
+    height: 10vh;
+    width: 140px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.value {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    ;
+    z-index: 1;
+    position: absolute;
+    left: 30px;
+    width: 100px;
+    height: 4vh;;
+    background-color: white;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 15px;
+}
