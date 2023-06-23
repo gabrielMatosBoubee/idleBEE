@@ -5,7 +5,6 @@ import chapeu from '../icons/chapeuFormatura-removebg-preview.png'
 import { useSelector } from 'react-redux';
 import { IGlobalState } from '../interfaces/redux';
 
-
 function Header() {
 
     const { moneyValue, xp } = useSelector((globalState: IGlobalState) => globalState?.header)

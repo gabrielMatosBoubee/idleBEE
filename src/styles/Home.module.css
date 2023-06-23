@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
+    margin-top: 10vh;
     width: 100vw;
     background-image: url("../icons/mario-s-room-wallpaper-1152x768_36.jpg");
     background-repeat: repeat;

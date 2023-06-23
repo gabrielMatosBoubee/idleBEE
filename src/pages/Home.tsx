@@ -4,30 +4,31 @@ import Header from '../components/Header';
 import Card from '../components/Card';
 import { useSelector } from 'react-redux';
 import { ICards, IGlobalState } from '../interfaces/redux';
+import Layout from '../components/Layout';
 
 function Home() {
 
     const { cards } = useSelector((globalState: IGlobalState) => globalState?.Home)
 
     return (
-        <>
-        <Header />
+        <Layout>
         <div className={style.home}>
-            {cards.map(({icon, title, value, maxTime, type, isUnlock, id, unlockPrice}: ICards) => (
+            {cards.map(({icon, title, value, maxTime, type, isUnlock, id, unlockPrice, level, levelUpPrice}: ICards) => (
                 <Card
                     key={id}
                     icon={icon} 
                     title={title}
                     value={value}
                     maxTime={maxTime}
-                    type={type}
                     isUnlock={isUnlock}
                     unlockPrice={unlockPrice}
                     id={id}
+                    level={level}
+                    levelUpPrice={levelUpPrice}
                 />
             ))}
         </div>
-        </>
+        </Layout>
     );
 }
 
